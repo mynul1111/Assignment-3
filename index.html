@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <!-- tailwind custom color -->
+    <!-- font awasme -->
+    <script src="https://kit.fontawesome.com/0ba68dd8be.js" crossorigin="anonymous"></script>
+
     <script>
         tailwind.config = {
           theme: {
@@ -31,12 +34,29 @@
 </head>
 <body class="font-manrope">
     <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-3xl">Hockey’s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-error">Get Ticket</a>
+        </div>
+      </div>
         <!-- slider or carousel -->
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-500 ml-20 mt-20" />
+              <img src="Images/1.png" class="w-600 ml-20 mt-20" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
@@ -47,38 +67,38 @@
         <!-- Professional Hockeys Club -->
         <section class="">
             <div class="text-center my-24">
-                <h3 class="text-5xl font-semibold ">Professional Hockeys Club</h3>
+                <h3 class="text-3xl font-semibold mb-6 ">Professional Hockeys Club</h3>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             </div>
-            <div class="flex ml-24 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-4   gap-10">
                 <div>
-                    <img class="" src="Images/Group 9.png" alt="">
-                    <h4>Prayer Facility</h4>
-                    <p>Amet consectetur. Condimentum 
+                    <img class="ml-20" src="Images/Group 9.png" alt="">
+                    <h4 class="text-center text-xl mt-3">Prayer Facility</h4>
+                    <p class="text-center mt-2">Amet consectetur. Condimentum 
                         <br>
                         dignissim adipiscing .
                     </p>
                 </div>
                 <div>
-                    <img src="Images/Group 9 (1).png" alt="">
-                    <h4>Experienced Coach</h4>
-                    <p>Amet consectetur. Condimentum 
+                    <img class="ml-20" src="Images/Group 9 (1).png" alt="">
+                    <h4 class="text-center text-xl mt-3">Experienced Coach</h4>
+                    <p class="text-center mt-2">Amet consectetur. Condimentum 
                         <br>
                         dignissim adipiscing .
                     </p>
                 </div>
                 <div>
-                    <img src="Images/Group 9 (2).png" alt="">
-                    <h4>Senior Player</h4>
-                    <p>Amet consectetur. Condimentum
+                    <img class="ml-20" src="Images/Group 9 (2).png" alt="">
+                    <h4 class="text-center text-xl mt-3">Senior Player</h4>
+                    <p class="text-center mt-2">Amet consectetur. Condimentum
                         <br>
                         dignissim adipiscing .
                     </p>
                 </div>
                 <div>
-                    <img src="Images/Group 9 (3).png" alt="">
-                    <h4>Training Ground</h4>
-                    <p>Amet consectetur. Condimentum 
+                    <img class="ml-20" src="Images/Group 9 (3).png" alt="">
+                    <h4 class="text-center text-xl mt-3">Training Ground</h4>
+                    <p class="text-center mt-2">Amet consectetur. Condimentum 
                         <br>
                         dignissim adipiscing .
                     </p>
@@ -88,42 +108,45 @@
         <!-- card -->
         <section class="">
             <div class="text-center my-24">
-                <h3>Program Sections</h3>
+                <h3 class="text-3xl font-semibold mb-6">Program Sections</h3>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             </div>
 
-            <div class="flex gap-20 ml-60">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+            <div class="flex flex-col md:flex-row gap-20 ml-5">
+                <div class="card w-2/4 bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body mt-20">
+                      <h2 class="card-title text-xl">Junior Program</h2>
+                      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-error">Register Now!</button>
                       </div>
                     </div>
                   </div>
 
-                  <div class="card w-96 bg-base-100 shadow-xl image-full">
-                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                  <div class="card w-2/4 bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body mt-20">
+                      <h2 class="card-title text-xl">Teenager Program</h2>
+                      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-error">Register Now!</button>
                       </div>
                     </div>
                   </div>
             </div>
 
-            <div class="mt-40 ml-80">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+            <div class="mt-10 ">
+                <div class="card w-2/4 ml-5 md:ml-0 md:w-full bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body mt-60">
+                      <h2 class="card-title text-xl">Professional Program</h2>
+                      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                      <br> enim sagittis turpis in magna. Id et sed euismod natoque amet nunc <br> morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-error">Register Now!</button>
                       </div>
                     </div>
                   </div>
@@ -133,68 +156,110 @@
         <!-- Our New Products -->
         <section>
             <div class="text-center my-24">
-                <h3>Our New Products</h3>
+                <h3 class="text-3xl font-semibold mb-6" >Our New Products</h3>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
                 <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/5.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
                   <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/6.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
                   <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/7.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
                   <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/8.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
                   <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/9.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
                   <div class="card card-side bg-base-100 shadow-xl">
                     <figure><img src="Images/10.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title">New movie is released!</h2>
-                      <p>Click the button to watch on Jetflix app.</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+                      <div class="flex">
+                        <p><i class="fa-solid fa-star"></i>5.0</p>
+                        <p><i class="fa-solid fa-eye"></i>20</p>
+                        <p><i class="fa-solid fa-heart"></i>200</p>
+                      </div>
+                      <p>World Cup Flags Football</p>
+                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <div class="flex">
+                        <p>Price - $22.00</p>
+                        
+                        <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
                       </div>
                     </div>
                   </div>
@@ -203,45 +268,102 @@
         <!-- icon -->
         <section>
             <div class="text-center my-24">
-                <h3>Get In Touch</h3>
+                <h3 class="text-3xl font-semibold mb-6">Get In Touch</h3>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             </div>
-            <div>
-                <div></div>
-                <div></div>
+
+            <div class="flex gap-40">
+
+                <div>
+                  <div>
+                    <img src="Images/Group 1171275317.png" alt="">
+                    <p><span>Phone Number :</span> 
+                      (+62) 123-321-543</p>
+                  </div>
+                  <div>
+                    <img src="Images/Group 1171275318.png" alt="">
+                    <p><span>Email :</span> 
+                      hockeys@support.com</p>
+                  </div>
+                  <div>
+                    <img src="Images/Group 1171275321.png" alt="">
+                    <p><span>Location :</span> 
+                      152/1 Mohakhali Wireless Gate</p>
+                  </div>  
+                </div>
+
+                <div>
+                  <div>
+
+                    <div class="flex">
+                      <div>
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Enter your full name">
+                      </div>
+                      <div>
+                        <p>Your Email</p>
+                        <input type="email" name="" id="" placeholder="Enter your email">
+                      </div>
+                    </div>
+
+                    <div class="flex"> 
+                      <div>
+                        <p>Subject</p>
+                        <input type="text" placeholder="Enter your subject">
+                      </div>
+                      <div>
+                        <p>Phone Number</p>
+                        <input type="number" name="" id="" placeholder="Enter your phone number">
+                      </div>
+                    </div>
+                    
+                    <div>
+
+                        <button>Send Message</button>
+                    </div>
+
+                  </div>
+                </div>
+
             </div>
+
             <div class="text-center my-24">
-                <h4>Social Media</h4>
-                <img class="ml-80" src="Images/Social.png" alt="">
+                <h4 class="text-2xl font-semibold mb-6">Social Media</h4>
+                <img class="ml-80 px-60" src="Images/Social.png" alt="">
             </div>
             
         </section>
 
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
+    <footer class="footer p-10 bg-black text-base-content text-white">
         <nav>
-            <h3>Get In Touch</h3>
+            <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
             <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
-        </nav> 
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+            <p><i class="fa-regular fa-envelope"></i> hockeys@support.com</p>
+            <p><i class="fa-solid fa-phone"></i> (+62) 123-321-543</p>
         </nav> 
         <nav>
           <header class="footer-title">Company</header> 
           <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">News & Article</a>
+          <a class="link link-hover">Legal Notice</a>
         </nav> 
         <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <header class="footer-title">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Academy </a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adult</a>
         </nav>
       </footer>
 </body>
